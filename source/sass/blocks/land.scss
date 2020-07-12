@@ -1,0 +1,83 @@
+.land {
+    display: flex;
+    flex-direction: column;
+}
+
+.land__img {
+    order: 2;
+    vertical-align: top;
+}
+
+
+.land__img--desktop {
+    display: none;
+}
+
+
+
+.land__inner {
+    display: flex;
+}
+
+.land__title {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #161616;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.land__description {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #161616;
+    margin-bottom: 30px;
+}
+
+.land__button {
+    width: 100%;
+    height: 55px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    color: #FFFFFF;
+    background: #161616;
+    margin-bottom: 102px;
+}
+
+@media (min-width: $desktop-width) {
+    .land__img--desktop {
+        display: block;
+        width: 570px;
+        height: 488px;
+    }
+
+    .land__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .land__button {
+        width: 277px;
+        height: 55px;
+    }
+
+    .land__description {
+        width: 430px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #161616;
+
+    }
+}

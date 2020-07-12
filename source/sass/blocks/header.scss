@@ -1,0 +1,43 @@
+header {
+    background-color: #161616;
+    background: url("../../images/main-bg.jpg") no-repeat;
+    opacity: 1;
+    padding-top: 30px;
+    padding-bottom: 22px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+
+}
+
+.header__burger {
+    background-color: inherit;
+    border: none;
+}
+
+@media (min-width: $desktop-width) {
+    .header {
+        background-color: #161616;
+        height: 600px;
+        background-image: none;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__menu {
+        padding: 0;
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo__img {}
+}

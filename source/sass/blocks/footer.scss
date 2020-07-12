@@ -1,0 +1,17 @@
+.footer__header {
+
+    background-color: #161616;
+}
+
+.footer .logo__img {
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+@media (min-width: $desktop-width) {
+
+    .footer__header {
+        padding: 49px 0 49px 0;
+    }
+}

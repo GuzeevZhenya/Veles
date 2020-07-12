@@ -1,0 +1,32 @@
+*,
+*::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    min-width: 320px;
+    background-color: #EFF0F1;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.container {
+    @include wrapper;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.pages__number {
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: auto;
+}

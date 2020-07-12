@@ -1,0 +1,99 @@
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products__item {
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.products__img {
+    vertical-align: top;
+
+}
+
+.products__item:hover::after {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 54px;
+    display: block;
+    background-color: #FFE500;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.products__item:hover::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: url("../../images/card-svg.png") no-repeat;
+    left: 10px;
+    top: 9px;
+    background-size: cover;
+    display: block;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.products__title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 23px;
+    color: #161616;
+    margin-top: 60px;
+    margin-bottom: 44px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.products__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 35px 0
+}
+
+
+@media (min-width: 574px) {
+
+    .products {
+        flex-direction: row;
+    }
+
+    .products__item {
+        width: 48%;
+    }
+
+
+}
+
+
+@media (min-width: $desktop-width) {
+    .products__title {
+        margin-top: 214px;
+        margin-bottom: 50px;
+    }
+
+    .products__item {
+        max-width: 350px;
+        margin-right: 25px;
+    }
+
+
+}

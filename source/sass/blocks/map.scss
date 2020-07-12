@@ -1,0 +1,27 @@
+.map__title {
+    font-size: 20px;
+    text-align: center;
+    color: #161616;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.map__img {
+    vertical-align: top;
+    margin-bottom: 48px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (min-width: $desktop-width) {
+
+    .map {
+        margin-bottom: 122px;
+    }
+
+    .map__title {
+        margin-bottom: 46px;
+    }
+}
