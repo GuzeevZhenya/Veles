@@ -18,10 +18,13 @@
 @media (min-width: $desktop-width) {
 
     .map {
-        margin-bottom: 122px;
+        margin-bottom: 243px;
     }
 
     .map__title {
         margin-bottom: 46px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
     }
 }

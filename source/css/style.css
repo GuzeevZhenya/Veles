@@ -10,7 +10,8 @@
 body {
   min-width: 320px;
   background-color: #EFF0F1;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden; }
 
 .container {
   margin: 0 auto;
@@ -23,8 +24,8 @@ body {
   @media (min-width: 1300px) {
     .container {
       margin: 0 auto;
-      padding: 0 20px;
-      max-width: 1170px; } }
+      padding: 0 15px;
+      max-width: 1200px; } }
 
 img {
   width: 100%;
@@ -49,7 +50,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 110px; }
+  padding-bottom: 110px;
+  vertical-align: top; }
 
 .header__burger {
   background-color: inherit;
@@ -59,11 +61,13 @@ header {
   .header {
     background-color: #161616;
     height: 600px;
-    background-image: none; }
+    background-image: none;
+    position: relative; }
   .header__burger {
     display: none; }
   .header__menu {
-    padding: 0; }
+    padding: 0;
+    height: 37px; }
   .header__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -73,7 +77,11 @@ header {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .header-logo__img {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 
 .navigation__list {
   display: -webkit-box;
@@ -118,7 +126,8 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 50%; }
+    width: 53%;
+    margin-left: 30px; }
   .navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161,10 +170,11 @@ header {
     text-decoration: none;
     max-width: 130px; }
   .navigation__contacts-adress {
-    font-size: 13px;
+    font-size: 10px;
     line-height: 15px;
     letter-spacing: 0.1em;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin-right: 10px; }
   .navigation__item {
     padding-bottom: 0; } }
 
@@ -212,16 +222,20 @@ header {
   .main__slider-title {
     max-width: 520px;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 44px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    margin-top: 170px;
-    margin-bottom: 51px;
+    margin-top: 164px;
+    margin-bottom: 47px;
     color: #FFFFFF; }
   .main__slider-pages {
     position: absolute;
-    left: 617px; }
+    left: 634px;
+    bottom: 39px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px; }
   .main__slider-bg {
     display: block;
     width: 972px;
@@ -229,7 +243,17 @@ header {
     position: absolute;
     top: -50px;
     right: -400px;
-    z-index: 2; } }
+    z-index: 2; }
+  .main__slider-btn {
+    width: 214px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #161616; } }
 
 .advantages__item {
   display: -webkit-box;
@@ -279,13 +303,17 @@ header {
 
 @media (min-width: 1300px) {
   .advantages__item {
-    width: 33%; }
+    width: 33%;
+    margin-bottom: 83px;
+    padding-left: 79px; }
   .advantages__info {
-    max-width: 180px; }
+    max-width: 182px; }
   .advantages__title {
     margin-bottom: 84px;
     font-size: 30px;
-    line-height: 35px; } }
+    line-height: 35px;
+    margin-top: 141px;
+    padding-left: 41px; } }
 
 .form {
   padding: 56px 0 60px 0;
@@ -360,24 +388,27 @@ header {
 
 @media (min-width: 1300px) {
   .form {
-    padding: 182px; }
+    padding-top: 182px;
+    padding-left: 110px;
+    padding-bottom: 80px; }
   .form__title {
     font-weight: bold;
     font-size: 25px;
-    line-height: 29px;
+    line-height: 35px;
     letter-spacing: 0.13em;
     text-transform: uppercase;
     color: #161616;
     max-width: 720px;
     margin: 0 auto;
-    margin-bottom: 31px; }
+    margin-bottom: 26px; }
   .form__box {
     text-align: center; }
   .form__name,
   .form__number {
     width: 249px;
     height: 55px;
-    margin-right: 15px; }
+    margin-right: 12px;
+    padding-left: 3px; }
   .form__button {
     width: 170px;
     height: 50px; } }
@@ -398,9 +429,12 @@ header {
 
 @media (min-width: 1300px) {
   .map {
-    margin-bottom: 122px; }
+    margin-bottom: 243px; }
   .map__title {
-    margin-bottom: 46px; } }
+    margin-bottom: 46px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px; } }
 
 .products {
   display: -webkit-box;
@@ -485,16 +519,29 @@ header {
 
 @media (min-width: 1300px) {
   .products__title {
-    margin-top: 214px;
-    margin-bottom: 50px; }
+    margin-top: 222px;
+    margin-bottom: 75px;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 70px;
+    text-transform: none; }
   .products__item {
-    max-width: 350px;
-    margin-right: 25px; } }
+    max-width: 370px;
+    margin-bottom: 44px; }
+  .products__item-title {
+    padding: 44px 0 33px 0;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px; }
+  .products__item--center {
+    margin-top: -20px; }
+  .products__item--center .products__item-title {
+    padding: 34px 30px; } }
 
 .land {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -546,10 +593,14 @@ header {
   margin-bottom: 102px; }
 
 @media (min-width: 1300px) {
+  .land {
+    margin-bottom: 105px; }
   .land__img--desktop {
     display: block;
-    width: 570px;
-    height: 488px; }
+    width: 550px;
+    height: 488px;
+    margin-top: -156px;
+    margin-right: 82px; }
   .land__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -564,12 +615,21 @@ header {
   .land__button {
     width: 277px;
     height: 55px; }
+  .land__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    margin-bottom: 26px; }
   .land__description {
     width: 430px;
     text-align: left;
     font-size: 15px;
     line-height: 18px;
-    color: #161616; } }
+    color: #161616;
+    margin-bottom: 50px; }
+  .land__info {
+    padding-left: 20px; } }
 
 .warehouses {
   position: relative;
@@ -629,6 +689,7 @@ header {
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
+    margin-bottom: 46px;
     color: #FFFFFF; }
   .warehouses__title {
     font-weight: bold;
@@ -637,8 +698,10 @@ header {
     letter-spacing: 0.13em;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     color: #FFFFFF; }
+  .warehouses__info {
+    padding-left: 20px; }
   .warehouses__button {
     width: 277px;
     height: 55px; }

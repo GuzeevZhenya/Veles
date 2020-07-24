@@ -30,6 +30,10 @@
     display: none;
 }
 
+// .navigation__contacts-number {
+//     margin-left: 40px;
+// }
+
 .navigation__contacts-number a:hover {
     color: #FFE500;
 }
@@ -40,7 +44,8 @@
     .navigation {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 53%;
+        margin-left: 30px;
     }
 
     .navigation__list {
@@ -77,10 +82,11 @@
     }
 
     .navigation__contacts-adress {
-        font-size: 13px;
+        font-size: 10px;
         line-height: 15px;
         letter-spacing: 0.1em;
         color: #FFFFFF;
+        margin-right: 10px;
     }
 
     .navigation__item {

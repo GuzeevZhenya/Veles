@@ -68,7 +68,7 @@
         font-weight: normal;
         font-size: 15px;
         line-height: 18px;
-
+        margin-bottom: 46px;
         color: #FFFFFF;
     }
 
@@ -79,9 +79,12 @@
         letter-spacing: 0.13em;
         text-transform: uppercase;
         text-align: left;
-        margin-bottom: 30px;
+        margin-bottom: 33px;
         color: #FFFFFF;
+    }
 
+    .warehouses__info {
+        padding-left: 20px;
     }
 
     .warehouses__button {

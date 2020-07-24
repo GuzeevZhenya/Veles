@@ -45,24 +45,29 @@
 @media (min-width: $desktop-width) {
 
     .main__slider {
+
         position: relative;
     }
 
     .main__slider-title {
         max-width: 520px;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 26px;
+        line-height: 44px;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        margin-top: 170px;
-        margin-bottom: 51px;
+        margin-top: 164px;
+        margin-bottom: 47px;
         color: #FFFFFF;
     }
 
     .main__slider-pages {
         position: absolute;
-        left: 617px;
+        left: 634px;
+        bottom: 39px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
     }
 
     .main__slider-bg {
@@ -73,6 +78,18 @@
         top: -50px;
         right: -400px;
         z-index: 2;
+    }
+
+    .main__slider-btn {
+        width: 214px;
+        height: 60px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: #161616;
     }
 
 }

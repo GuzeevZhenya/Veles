@@ -6,11 +6,12 @@ header {
     padding-bottom: 22px;
 }
 
+
 .header__menu {
     display: flex;
     justify-content: space-between;
     padding-bottom: 110px;
-
+    vertical-align: top;
 }
 
 .header__burger {
@@ -23,6 +24,7 @@ header {
         background-color: #161616;
         height: 600px;
         background-image: none;
+        position: relative;
     }
 
     .header__burger {
@@ -31,13 +33,17 @@ header {
 
     .header__menu {
         padding: 0;
+        height: 37px;
     }
 
     .header__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     }
 
-    .header-logo__img {}
+    .header-logo__img {
+        align-items: flex-start;
+    }
 }

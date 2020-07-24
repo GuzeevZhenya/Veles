@@ -1,6 +1,7 @@
 .form {
     padding: 56px 0 60px 0;
     background-color: #FFFFFF;
+
 }
 
 .form__title {
@@ -50,20 +51,22 @@
 @media (min-width: $desktop-width) {
 
     .form {
-        padding: 182px;
+        padding-top: 182px;
+        padding-left: 110px;
+        padding-bottom: 80px;
     }
 
     .form__title {
         font-weight: bold;
         font-size: 25px;
-        line-height: 29px;
+        line-height: 35px;
 
         letter-spacing: 0.13em;
         text-transform: uppercase;
         color: #161616;
         max-width: 720px;
         margin: 0 auto;
-        margin-bottom: 31px;
+        margin-bottom: 26px;
     }
 
     .form__box {
@@ -74,7 +77,8 @@
     .form__number {
         width: 249px;
         height: 55px;
-        margin-right: 15px;
+        margin-right: 12px;
+        padding-left: 3px;
     }
 
     .form__button {
