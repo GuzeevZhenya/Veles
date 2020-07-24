@@ -49,6 +49,9 @@
 
 
 @media (min-width: 574px) {
+    .advantages {
+        background-color: #ffffff;
+    }
 
     .advantages__inner {
         display: flex;
@@ -77,7 +80,7 @@
         margin-bottom: 84px;
         font-size: 30px;
         line-height: 35px;
-        margin-top: 141px;
+        padding-top: 141px;
         padding-left: 41px;
     }
 }

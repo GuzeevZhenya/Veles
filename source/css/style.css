@@ -231,7 +231,7 @@ header {
     color: #FFFFFF; }
   .main__slider-pages {
     position: absolute;
-    left: 634px;
+    left: 554px;
     bottom: 39px;
     font-weight: normal;
     font-size: 18px;
@@ -289,6 +289,8 @@ header {
   margin-left: 40px; }
 
 @media (min-width: 574px) {
+  .advantages {
+    background-color: #ffffff; }
   .advantages__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -312,7 +314,7 @@ header {
     margin-bottom: 84px;
     font-size: 30px;
     line-height: 35px;
-    margin-top: 141px;
+    padding-top: 141px;
     padding-left: 41px; } }
 
 .form {
@@ -529,13 +531,24 @@ header {
     max-width: 370px;
     margin-bottom: 44px; }
   .products__item-title {
-    padding: 44px 0 33px 0;
+    padding: 0;
     text-align: left;
     font-weight: bold;
     padding-left: 30px;
     font-weight: 600;
     font-size: 18px;
-    line-height: 21px; }
+    line-height: 21px;
+    max-width: 270px;
+    height: 115px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .products__item--center {
     margin-top: -20px; }
   .products__item--center .products__item-title {
