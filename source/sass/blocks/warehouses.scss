@@ -1,42 +1,34 @@
 .warehouses {
     position: relative;
-    background-color: #161616;
+    background-color: $black;
     padding-bottom: 39px;
     padding-top: 250px;
 }
 
 .warehouses__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
+    @include font-text(18px, 21px, bold);
     text-align: center;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #FFFFFF;
-
+    color: $white;
 }
 
 
 
 .warehouses__description {
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
+    @include font-text(15px, 18px, normal);
     text-align: center;
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 30px;
 }
 
 .warehouses__button {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
+    @include font-text(12px, 14px, bold);
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    color: #FFFFFF;
-    height: 55px;
-    border: 1px solid #FFFFFF;
+    color: $white;
+    border: 1px solid $white;
     padding: 21px 0 17px 0;
 }
 
@@ -62,35 +54,28 @@
     }
 
     .warehouses__description {
+        @include font-text(15px, 18px, normal);
         max-width: 500px;
         text-align: left;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 18px;
         margin-bottom: 46px;
-        color: #FFFFFF;
+        color: $white;
     }
 
     .warehouses__title {
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 35px;
+        @include font-text(30px, 35px, bold);
         letter-spacing: 0.13em;
         text-transform: uppercase;
         text-align: left;
         margin-bottom: 33px;
-        color: #FFFFFF;
+        color: $white;
     }
 
     .warehouses__info {
         padding-left: 20px;
     }
 
-    .warehouses__button {
-        width: 277px;
-        height: 55px;
-    }
+    .warehouses__button {}
+
 
     .warehouses__img {
         position: absolute;

@@ -1,13 +1,11 @@
 .form {
     padding: 56px 0 60px 0;
-    background-color: #FFFFFF;
+    background-color: $white;
 
 }
 
 .form__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
+    @include font-text(18px, 21px, bold);
     text-align: center;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -28,28 +26,24 @@
 
 .form__name::placeholder,
 .form__number::placeholder {
-    font-size: 16px;
-    line-height: 19px;
-    color: #161616;
+    @include font-text(16px, 19px, 400);
+    color: $black;
     opacity: 0.5;
-    padding-left: 17px;
 }
 
 .form__button {
+    @include font-text(12px, 14px, 600);
     background: #161616;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
     letter-spacing: 0.07em;
     width: 100%;
-    height: 50px;
+    padding: 18px 0;
     border: none;
-    color: #FFFFFF;
+    color: $white;
+    cursor: pointer;
 }
 
 
 @media (min-width: $desktop-width) {
-
     .form {
         padding-top: 182px;
         padding-left: 110px;
@@ -57,20 +51,21 @@
     }
 
     .form__title {
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 35px;
-
+        @include font-text(25px, 35px, bold);
         letter-spacing: 0.13em;
         text-transform: uppercase;
-        color: #161616;
+        color: $black;
         max-width: 720px;
         margin: 0 auto;
         margin-bottom: 26px;
     }
 
     .form__box {
+        display: flex;
+        justify-content: center;
+        align-self: center;
         text-align: center;
+
     }
 
     .form__name,
@@ -78,11 +73,11 @@
         width: 249px;
         height: 55px;
         margin-right: 12px;
-        padding-left: 3px;
+        margin-bottom: 0;
     }
 
     .form__button {
         width: 170px;
-        height: 50px;
+        padding: 18px 0;
     }
 }

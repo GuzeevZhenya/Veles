@@ -1,6 +1,5 @@
 .footer__header {
-
-    background-color: #161616;
+    background-color: $black;
 }
 
 .footer .logo__img {
@@ -10,7 +9,6 @@
 
 
 @media (min-width: $desktop-width) {
-
     .footer__header {
         padding: 49px 0 49px 0;
     }

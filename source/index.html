@@ -63,10 +63,10 @@
                         ответственное хранение
                     </h1>
                     <img class="main__slider-bg" src="images/main-bg.jpg" alt="">
-                    <button class="main__slider-btn">Заказать</button>
+                    <button class="main__slider-btn" id="myBtn">Заказать</button>
                 </div>
-
-                <!-- придумать имя для данного блока -->
+                <!-- придумать имя для данного
+                        блока -->
                 <div class="main__slider-pages">
                     <button class="left-page"></button>
                     <span class="pages__number">1 / 3</span>
@@ -87,7 +87,7 @@
                     <img class="products__img" src="images/4.png" alt="">
                     <div class="products__item-title">Гранитный щебень</div>
                 </div>
-                <div class="products__item products__item--center">
+                <div class="products__item">
                     <img class="products__img" src="images/2.png" alt="">
                     <div class="products__item-title">Товары сельского
                         хозяйства</div>
@@ -217,7 +217,7 @@
                         путь, пандусы для выгрузки крытых вагонов и фур.
                     </div>
                     <div>
-                        <button class="land__button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                        <button class="land__button button-consultation">Получить консультацию</button>
                     </div>
                 </div>
 
@@ -246,7 +246,7 @@
                     закрытой территории базы
                     обеспечивается функционирование
                     всех инженерных сетей.</div>
-                <div class="warehouses__button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</div>
+                <div class="warehouses__button button-consultation">Получить консультацию</div>
             </div>
             <div>
                 <picture class="warehouses__img">
@@ -270,6 +270,17 @@
                 <input class="form__number" type="number" placeholder="Телефон">
                 <button class="form__button">ОТПРАВИТЬ</button>
             </form>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="dws">
+            <div class="pulse">
+                <div class="block"></div>
+                <div class="phone"><i class="fa fa-phone"></i></div>
+                <div class="text">Кнопка связи</div>
+            </div>
         </div>
     </section>
 
@@ -316,6 +327,14 @@
             </div>
         </div>
     </footer>
+
+    <form action="index.html" id="myModal" class="box" method="post">
+        <h1>Заполните ваши контактные данные</h1>
+        <span class="close">&times;</span>
+        <input type="text" name="" placeholder="Ваше имя">
+        <input type="email" name="" placeholder="Ваша почта">
+        <input type="submit" name="" value="Login">
+    </form>
 
     <script src="js/script.js"></script>
 

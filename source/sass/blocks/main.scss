@@ -3,7 +3,7 @@
     font-weight: bold;
     max-width: 250px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     margin-bottom: 36px;
     line-height: 33px;
 }
@@ -13,16 +13,14 @@
 }
 
 .main__slider-btn {
+    @include font-text(14px, 16px, bold);
     width: 168px;
     height: 55px;
-    background-color: #FFE500;
-    color: #161616;
+    background-color: $yellow;
+    color: $black;
     border: none;
-    font-weight: 700;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 47px;
-    font-size: 14px;
-    line-height: 16px;
     text-align: center;
     letter-spacing: 0.13em;
     text-transform: uppercase;
@@ -41,33 +39,26 @@
     text-align: right;
 }
 
-
 @media (min-width: $desktop-width) {
-
     .main__slider {
-
         position: relative;
     }
 
     .main__slider-title {
+        @include font-text(26px, 44px, bold);
         max-width: 520px;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 44px;
         letter-spacing: 0.12em;
         text-transform: uppercase;
         margin-top: 164px;
         margin-bottom: 47px;
-        color: #FFFFFF;
+        color: $white;
     }
 
     .main__slider-pages {
+        @include font-text(18px, 21px, bold);
         position: absolute;
         left: 554px;
         bottom: 39px;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 21px;
     }
 
     .main__slider-bg {
@@ -81,15 +72,15 @@
     }
 
     .main__slider-btn {
+        @include font-text(18px, 21px, bold);
         width: 214px;
-        height: 60px;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         letter-spacing: 0.13em;
         text-transform: uppercase;
-        color: #161616;
+        color: $black;
     }
-
 }

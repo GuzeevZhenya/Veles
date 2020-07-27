@@ -15,3 +15,10 @@
          max-width: 1200px;
      }
  }
+
+
+ @mixin font-text($font-size: 12px, $line-height: 16px, $font-weight: 400) {
+     font-size: $font-size;
+     line-height: $line-height;
+     font-weight: $font-weight;
+ }

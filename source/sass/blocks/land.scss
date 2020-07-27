@@ -1,5 +1,6 @@
 .land {
     flex-direction: column;
+    background-color: $white;
 }
 
 .land__img {
@@ -7,55 +8,46 @@
     vertical-align: top;
 }
 
-
 .land__img--desktop {
     display: none;
 }
-
-
 
 .land__inner {
     display: flex;
 }
 
 .land__title {
-    font-size: 18px;
-    line-height: 21px;
+    @include font-text(18px, 21px, bold);
     text-align: center;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #161616;
-    font-weight: bold;
+    color: $black;
     margin-bottom: 20px;
 }
 
 .land__description {
-    font-size: 15px;
-    line-height: 18px;
+    @include font-text(15px, 18px, normal);
     text-align: center;
-    color: #161616;
+    color: $black;
     margin-bottom: 30px;
 }
 
 .land__button {
+    @include font-text(12px, 14px, bold);
     width: 100%;
-    height: 55px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
+    padding: 21px 0;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
-    color: #FFFFFF;
-    background: #161616;
+    color: $white;
+    background: $black;
     margin-bottom: 102px;
 }
 
 @media (min-width: $desktop-width) {
-
     .land {
-        margin-bottom: 105px;
+        padding-bottom: 105px;
     }
 
     .land__img--desktop {
@@ -73,29 +65,29 @@
     }
 
     .land__button {
-        width: 277px;
-        height: 55px;
+        margin: 0;
+    }
+
+    .land__button:hover {
+        background-color: $yellow;
+        color: $black;
     }
 
     .land__title {
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 35px;
+        @include font-text(30px, 35px, bold);
         text-align: left;
         margin-bottom: 26px;
     }
 
     .land__description {
+        @include font-text(15px, 18px, normal);
         width: 430px;
         text-align: left;
-        font-size: 15px;
-        line-height: 18px;
-        color: #161616;
+        color: $black;
         margin-bottom: 50px;
     }
 
     .land__info {
         padding-left: 20px;
-
     }
 }

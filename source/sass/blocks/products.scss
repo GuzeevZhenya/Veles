@@ -12,7 +12,7 @@
 
 .products__item {
     position: relative;
-    background-color: #ffffff;
+    background-color: $white;
     margin-bottom: 35px;
 }
 
@@ -27,7 +27,7 @@
     width: 57px;
     height: 54px;
     display: block;
-    background-color: #FFE500;
+    background-color: $yellow;
     top: 0;
     left: 0;
     cursor: pointer;
@@ -48,11 +48,9 @@
 }
 
 .products__title {
-    font-size: 20px;
+    @include font-text(20px, 23px, 600);
     text-align: center;
-    font-weight: 600;
-    line-height: 23px;
-    color: #161616;
+    color: $black;
     margin-top: 60px;
     margin-bottom: 44px;
     letter-spacing: 0.12em;
@@ -60,9 +58,7 @@
 }
 
 .products__item-title {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
+    @include font-text(16px, 21px, 600);
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -71,7 +67,6 @@
 
 
 @media (min-width: 574px) {
-
     .products {
         flex-direction: row;
     }
@@ -80,16 +75,14 @@
         width: 48%;
     }
 
-
 }
 
 
 @media (min-width: $desktop-width) {
     .products__title {
+        @include font-text(26px, 23px, 700);
         margin-top: 222px;
         margin-bottom: 75px;
-        font-weight: 700;
-        font-size: 26px;
         margin-left: 70px;
         text-transform: none;
     }
@@ -99,15 +92,18 @@
         margin-bottom: 44px;
     }
 
+
+    .products__item:hover {
+        transform: translate(0, -50px);
+    }
+
     .products__item-title {
+        @include font-text(18px, 21px, 600);
         padding: 0;
         //  padding: 49px 0 33px 0;
         text-align: left;
         font-weight: bold;
         padding-left: 30px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 21px;
         max-width: 270px;
         height: 115px;
         display: flex;
