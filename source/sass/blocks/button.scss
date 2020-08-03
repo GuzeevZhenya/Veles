@@ -3,3 +3,15 @@
     padding: 21px 0;
     cursor: pointer;
 }
+
+@media (min-width: $table-width) {
+    .button-consultation {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .button-consultation {
+        margin: 0;
+    }
+}

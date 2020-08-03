@@ -17,12 +17,16 @@
     margin: 0 auto;
 }
 
+@media (min-width: $table-width) {
+    .map__title {
+        padding-top: 25px;
+    }
+}
 
 @media (min-width: $desktop-width) {
     .map {
         padding-bottom: 243px;
     }
-
     .map__title {
         margin-bottom: 46px;
         font-weight: 600;

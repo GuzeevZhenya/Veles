@@ -14,7 +14,7 @@
 
 .main__slider-btn {
     @include font-text(14px, 16px, bold);
-    width: 168px;
+    min-width: 168px;
     height: 55px;
     background-color: $yellow;
     color: $black;
@@ -39,28 +39,43 @@
     text-align: right;
 }
 
+@media (min-width: $table-width) {
+    .main__slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__slider-title {
+        text-align: center;
+        margin: 0 auto 120px;
+    }
+    .main__slider-btn {
+        width: 350px;
+    }
+}
+
 @media (min-width: $desktop-width) {
     .main__slider {
         position: relative;
+        display: block;
     }
-
     .main__slider-title {
         @include font-text(26px, 44px, bold);
         max-width: 520px;
         letter-spacing: 0.12em;
         text-transform: uppercase;
+        margin: 0;
         margin-top: 164px;
         margin-bottom: 47px;
         color: $white;
     }
-
     .main__slider-pages {
         @include font-text(18px, 21px, bold);
         position: absolute;
         left: 554px;
         bottom: 39px;
     }
-
     .main__slider-bg {
         display: block;
         width: 972px;
@@ -70,7 +85,6 @@
         right: -400px;
         z-index: 2;
     }
-
     .main__slider-btn {
         @include font-text(18px, 21px, bold);
         width: 214px;

@@ -2,21 +2,18 @@
      margin: 0 auto;
      padding: 0 16px;
      max-width: 320px;
-
      @media (min-width: $table-width) {
          margin: 0 auto;
-         // padding: 0 30px;
-         max-width: 768px;
+         padding: 0 15px;
+         max-width: 568px;
      }
-
      @media (min-width: $desktop-width) {
          margin: 0 auto;
          padding: 0 15px;
          max-width: 1200px;
      }
  }
-
-
+ 
  @mixin font-text($font-size: 12px, $line-height: 16px, $font-weight: 400) {
      font-size: $font-size;
      line-height: $line-height;

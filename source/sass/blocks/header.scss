@@ -1,11 +1,11 @@
 header {
     background-color: $black;
     background: url("../../images/main-bg.jpg") no-repeat;
+    background-size: cover;
     opacity: 1;
     padding-top: 30px;
     padding-bottom: 22px;
 }
-
 
 .header__menu {
     display: flex;
@@ -19,6 +19,8 @@ header {
     border: none;
 }
 
+@media (min-width: $table-width) {}
+
 @media (min-width: $desktop-width) {
     .header {
         background-color: $black;
@@ -26,22 +28,18 @@ header {
         background-image: none;
         position: relative;
     }
-
     .header__burger {
         display: none;
     }
-
     .header__menu {
         padding: 0;
         height: 37px;
     }
-
     .header__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .header-logo__img {
         align-items: flex-start;
     }
