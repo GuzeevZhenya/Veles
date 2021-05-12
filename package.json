@@ -16,7 +16,7 @@
     "sass": "^1.26.5",
     "sourcemap": "^0.1.0",
     "stylelint": "^13.3.3",
-    "swiper": "^5.4.0"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {},
   "scripts": {
